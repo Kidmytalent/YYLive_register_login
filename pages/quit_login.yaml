@@ -1,0 +1,18 @@
+quit_login:
+
+  - locator: //*[@resource-id="com.yy.mobile.plugin.personalcenter:id/iv_setting"]
+    action: click
+
+
+
+  - locator: //*[@resource-id="com.yy.mobile.plugin.main:id/tv_logout"]
+    action: swip_click
+    text: "退出登录"
+
+
+  - locator: //*[@resource-id="com.duowan.mobile:id/d8"]
+    action: click
+
+
+  - locator: //*[@text="登录YY"]
+    action: check

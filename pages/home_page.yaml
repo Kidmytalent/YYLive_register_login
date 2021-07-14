@@ -1,0 +1,10 @@
+goto_person_center:
+  - locator: //*[@text="个人中心"]
+    action: click
+
+
+
+goto_click_quit:
+
+  - locator: //*[@text="个人中心"]
+    action: click

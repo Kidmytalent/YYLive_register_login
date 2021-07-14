@@ -1,0 +1,44 @@
+goto_register:
+  - locator: //*[@resource-id="com.yy.mobile.plugin.ycloud:id/register_btn"]
+    action: click
+
+
+
+straight_login:
+  - locator: //*[@resource-id="com.yy.mobile.plugin.ycloud:id/baidu_login_layout"]
+    action: click
+
+
+  - locator: //*[@content-desc="帐号密码登录"]
+    action: click
+
+
+  - locator: //android.view.View[@content-desc="换个帐号"]
+    action: click
+
+
+  - locator: //android.webkit.WebView[@content-desc="登录百度帐号"]/android.view.View[2]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.EditText
+    action: send_keys
+    text: ${user}
+
+
+  - locator: //*[@content-desc="登录百度帐号"]/android.view.View[2]/android.view.View[3]/android.widget.Button[1]
+    action: click
+
+
+  - locator: //*[@content-desc="登录百度帐号"]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[2]
+    action: click
+
+
+  - locator: //*[@content-desc="帐号密码登录"]
+    action: click
+
+
+  - locator: //*[@text="•••••••"]
+    action: send_keys
+    text: ${pass}
+
+
+  - locator: //*[@content-desc="帐号密码登录"]/android.view.View[2]/android.view.View[2]/android.view.View[1]/android.view.View[5]
+    action: click
+

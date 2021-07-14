@@ -1,0 +1,21 @@
+register:
+  - locator: //*[@content-desc="+86"]
+    action: click
+
+
+  - locator: //*[@text="请输入手机号"]
+    action: send_keys
+    text: ${phonenum}
+
+
+  - locator: //*[@resource-id="reg-div"]/android.view.View[3]/android.widget.Button[1]
+    action: click
+
+
+  - locator: //*[@resource-id="reg-div"]/android.view.View[2]/android.view.View[2]
+    action: click
+
+
+  - locator: //*[@content-desc="输入短信验证码"]
+    action: click
+

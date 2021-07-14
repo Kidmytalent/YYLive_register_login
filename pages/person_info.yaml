@@ -1,0 +1,3 @@
+goto_login:
+  - locator: //*[@text="登录YY"]
+    action: click
